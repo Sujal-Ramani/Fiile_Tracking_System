@@ -27,21 +27,21 @@
     <section>
         <div class="newfile">
             <p class="tagline">ADD NEW FILE</p>
-            <input type="text" name="receivedFrom" id="receivedFrom" placeholder="Owner Name">
-            <input type="text" name="officerName" id="officerName" placeholder="Officer Name">
-            <input type="text" name="subject" id="subject" placeholder="Reason">
-            <input type="text" name="color" id="color" placeholder="File Color">
-            <input type="text" name="location" id="location" placeholder="Initial Location">
-            <input type="text" name="date" id="date" placeholder="Date">
-            <input type="text" name="totalPages" id="Total_pages" placeholder="Total Pages">
-            <input type="text" name="mobileNo" id="mobileNo" placeholder="Mobile No">
+            <input type="text" name="receivedFrom" id="receivedFrom" placeholder="Owner Name" required>
+            <input type="text" name="officerName" id="officerName" placeholder="Officer Name" required>
+            <input type="text" name="subject" id="subject" placeholder="Reason" required>
+            <input type="text" name="color" id="color" placeholder="File Color" required>
+            <input type="text" name="location" id="location" placeholder="Initial Location" required>
+            <input type="text" name="date" id="date" placeholder="Date" required>
+            <input type="text" name="totalPages" id="Total_pages" placeholder="Total Pages" required>
+            <input type="text" name="mobileNo" id="mobileNo" placeholder="Mobile No" required>
 
             <button type="submit" id="addnew">ADD NEW</button>
         </div>
         <div class="progress">
             <p class="tagline">UPDATE FILE PROGRESS</p>
-            <input type="text" name="Tracking Id" id="trackingId" placeholder="Tracking Id">
-            <div class="radio">
+            <input type="text" name="Tracking Id" id="trackingId" placeholder="Tracking Id" required>
+            <div class="radio" required>
                 <input type="radio" name="status" id="approved">
                 <label for="status">Approved</label>
         
@@ -51,9 +51,9 @@
                 <input type="radio" name="status" id="declined">
                 <label for="status">Declined</label>
             </div>
-            <input type="text" name="date" id="date" placeholder="Date Of Update">
-            <input type="text" name="officerName" id="officerName" placeholder="officer Name">
-            <input type="text" name="msg" id="msg" placeholder="Extra Info Like Reason">
+            <input type="text" name="date" id="date" placeholder="Date Of Update" required>
+            <input type="text" name="officerName" id="officerName" placeholder="officer Name" required>
+            <input type="text" name="msg" id="msg" placeholder="Extra Info Like Reason" required>
             
             <button type="submit" >UPDATE</button>
         </div>
