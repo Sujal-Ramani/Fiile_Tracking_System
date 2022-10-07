@@ -10,7 +10,6 @@
 
 html,
 body {
-    overflow: hidden;
     height: 100%;
     min-height: 100%;
     margin: 0;
@@ -66,15 +65,50 @@ nav .logo {
 }
 
 /* end design of header */
-
-footer
+section .aboutsite p
 {
+    text-align: center;
+}
+footer {
     color: white;
     height: 200px;
     width: 100%;
     background-color: #180839;
     position: fixed;
     bottom: 0;
+    
+}
+
+
+.ft_main p {
+    text-align: center;
+    font-size: 2rem;
+}
+.ft_content
+{
     display: flex;
-    flex-direction: row;
+    flex-direction: row;  
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 200px;
+    
+}
+.department {
+    width: 500px;
+}
+
+.department .dep_heading {
+    text-align: center;
+}
+
+.developer {
+    width: 500px;
+    border-left: 3px solid var(--secondary);
+    padding-left: 100px;
+
+}
+
+.developer .dev_heading {
+
+    text-align: center;
 }
