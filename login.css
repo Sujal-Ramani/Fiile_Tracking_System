@@ -20,8 +20,8 @@ body {
 
     background-image: url('images/3.jpg');
     background-repeat: no-repeat;
-    background-size: 60%;
-    background-position: bottom 50% right 90%;
+    background-size: 55%;
+    background-position: bottom 50% right 80%;
 }
 
 /* Start Design of Header */
@@ -85,13 +85,16 @@ form
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: -10px;
 }
 .tagline
 {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: 900;
     color: var(--secondary);
+    margin-bottom: 0px;
+    text-transform: uppercase;
 }
 input[type=text],
 input[type=password] {
@@ -111,7 +114,7 @@ input[type=password] {
 button {
     height: 35px;
     width: 130px;
-    margin: 50px;
+    margin: 50px 0px 0px 0px;
     background-color: var(--primary);
     color: #FFFFFF;
     font-size: 1.2rem;
