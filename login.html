@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <script src="https://kit.fontawesome.com/5d37a6898e.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +22,13 @@
                     <li><a href="newfile.html">New File</a></li>
                     <li><a href="track.html">Track File</a></li>
                     <li><a href="About_us.html">About us</a></li>
-                    <li><a href="login.html">Log in</a></li>
+                    <li><a href="login.html">Log in
+                            <i class="fa fa-sharp fa-solid fa-caret-down"></i>
+                        </a>
+                        <ul>
+                            <li><a href="index.html">Sign Out</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -32,8 +39,8 @@
             <input type="text" placeholder="Email Id" id="id_email" name="email" required>
             <input type="password" placeholder="Enter Password" id="id_password" name="password" required>
             <a href="registration.html" id="reg">Create New Account</a>
-                <button type="submit">Log in</button>
-            
+            <button type="submit">Log in</button>
+
         </form>
     </section>
 </body>

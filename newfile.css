@@ -31,7 +31,7 @@ header {
     justify-content: space-between;
     align-items: center;
     color: var(--primary);
-
+    
 }
 
 nav .logo {
@@ -53,18 +53,21 @@ nav .logo {
 
     float: right;
     display: flex;
-    gap: 1.8rem;
+    gap: 0.5rem;
     list-style: none;
-    color: black;
 
 }
 
 .navigation ul li {
+    /* menu add line */
+    display: inline-block; 
     float: left;
     gap: 2.8rem;
 }
 
 .navigation ul li a {
+    display: block;
+    padding: 0px 15px;
     font-size: 1rem;
     font-weight: 900;
     text-decoration: none;
@@ -75,6 +78,18 @@ nav .logo {
     color: var(--secondary);
 }
 
+.navigation ul ul{
+    visibility: hidden;
+}
+.navigation ul li:hover > ul 
+{
+    visibility: visible;
+}
+.navigation ul ul li{
+    position: relative;
+    top: 5px;
+    left: -45px;
+}
 /* end design of header */
 
 section {

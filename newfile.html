@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <script src="https://kit.fontawesome.com/5d37a6898e.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FTS:New File & Update</title>
     <link rel="stylesheet" href="newfile.css">
 </head>
+
 <body>
     <header>
         <nav>
@@ -19,7 +22,13 @@
                     <li><a href="newfile.html">New File</a></li>
                     <li><a href="track.html">Track File</a></li>
                     <li><a href="About_us.html">About us</a></li>
-                    <li><a href="login.html">Log in</a></li>
+                    <li><a href="login.html">Log in
+                            <i class="fa fa-sharp fa-solid fa-caret-down"></i>
+                        </a>
+                        <ul>
+                            <li><a href="index.html">Sign Out</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -44,19 +53,20 @@
             <div class="radio" required>
                 <input type="radio" name="status" id="approved">
                 <label for="status">Approved</label>
-        
+
                 <input type="radio" name="status" id="id_progress">
                 <label for="status">In Progress</label>
-        
+
                 <input type="radio" name="status" id="declined">
                 <label for="status">Declined</label>
             </div>
             <input type="text" name="date" id="date" placeholder="Date Of Update" required>
             <input type="text" name="officerName" id="officerName" placeholder="officer Name" required>
             <input type="text" name="msg" id="msg" placeholder="Extra Info Like Reason" required>
-            
-            <button type="submit" >UPDATE</button>
+
+            <button type="submit">UPDATE</button>
         </div>
     </section>
 </body>
+
 </html>
