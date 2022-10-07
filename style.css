@@ -109,7 +109,7 @@ nav .logo {
 
 
 input[type=text] {
-    width: 200px;
+    width: 400px;
     height: 35px;
     outline: none;
     border: 1px solid grey;
@@ -122,9 +122,9 @@ input[type=text] {
 }
 
 .main #btn #btn1 {
-    height: 36px;
+    height: 39px;
     width: 130px;
-    margin: 23px 0px 0px 0px;
+    margin: 23px -2px 0px -180px;
     background-color: var(--primary);
     color: #FFFFFF;
     font-size: 1.2rem;
