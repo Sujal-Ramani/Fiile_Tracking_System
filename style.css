@@ -30,7 +30,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    color: var(--primary);
+    
 }
 
 nav .logo {
@@ -54,7 +55,7 @@ nav .logo {
     display: flex;
     gap: 1.8rem;
     list-style: none;
-    color: black;
+    /* color: black; */
 
 }
 
@@ -67,9 +68,12 @@ nav .logo {
     font-size: 1rem;
     font-weight: 900;
     text-decoration: none;
-    color: var(--font);
+    color: var(--primary);
 }
-
+.navigation ul li a:hover
+{
+    color: var(--secondary);
+}
 /* end design of header */
 
 /* Start Design of main content  */

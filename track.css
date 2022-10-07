@@ -25,6 +25,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: var(--primary);
 
 }
 
@@ -64,9 +65,12 @@ nav .logo {
     font-size: 1rem;
     font-weight: 900;
     text-decoration: none;
-    color: var(--font);
+    color: var(--primary);
 }
-
+.navigation ul li a:hover
+{
+    color: var(--secondary);
+}
 /* end design of header */
 .mainBox {
     display: flex;

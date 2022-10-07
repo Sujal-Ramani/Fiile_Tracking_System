@@ -30,6 +30,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: var(--primary);
 
 }
 
@@ -67,7 +68,11 @@ nav .logo {
     font-size: 1rem;
     font-weight: 900;
     text-decoration: none;
-    color: var(--font);
+    color: var(--primary);
+}
+.navigation ul li a:hover
+{
+    color: var(--secondary);
 }
 
 /* end design of header */
@@ -82,7 +87,7 @@ section {
 button {
     height: 35px;
     width: 130px;
-    margin: 50px;
+    margin: 0px 50px 50px 50px;
     background-color: var(--primary);
     color: #FFFFFF;
     font-size: 1.2rem;
@@ -104,9 +109,9 @@ input[type=text] {
     border: 2px solid black;
     border-radius: 3px;
     background: transparent;
-    color: var(--primary);
+    color: var(--font);
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 600;
     margin: 1px 23px 23px 23px;
 }
 
@@ -123,6 +128,7 @@ input[type=text] {
     grid-column-end: 3;
     font-size: 1.5rem;
     font-weight: 900;
+    color: var(--font);
 }
 
 #addnew {
@@ -134,7 +140,7 @@ input[type=text] {
 .progress {
     display: flex;
     flex-direction: column;
-    margin: 167px 0px 0px 50px;
+    margin: 70px 0px 0px 50px;
 }
 .radio
 {

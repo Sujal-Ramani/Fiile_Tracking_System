@@ -24,6 +24,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: var(--primary);
 
 }
 
@@ -61,7 +62,11 @@ nav .logo {
     font-size: 1rem;
     font-weight: 900;
     text-decoration: none;
-    color: var(--font);
+    color: var(--primary);
+}
+.navigation ul li a:hover
+{
+    color: var(--secondary);
 }
 
 /* end design of header */
@@ -71,15 +76,17 @@ section .aboutsite p
 }
 footer {
     color: white;
-    height: 200px;
+    height: 250px;
     width: 100%;
     background-color: #180839;
     position: fixed;
     bottom: 0;
     
 }
-
-
+.aboutsite .tagline
+{
+    font-size: 2rem;
+}
 .ft_main p {
     text-align: center;
     font-size: 2rem;
@@ -90,7 +97,7 @@ footer {
     flex-direction: row;  
     align-items: center;
     justify-content: center;
-    margin-bottom: 200px;
+    margin-top: -20px;
     
 }
 .department {
@@ -99,16 +106,21 @@ footer {
 
 .department .dep_heading {
     text-align: center;
+    color: var(--secondary);
+    font-size: 1.5rem;
 }
 
 .developer {
     width: 500px;
     border-left: 3px solid var(--secondary);
     padding-left: 100px;
+    margin-left: 70px;
 
 }
 
 .developer .dev_heading {
 
     text-align: center;
+    color: var(--secondary);
+    font-size: 1.5rem;
 }
