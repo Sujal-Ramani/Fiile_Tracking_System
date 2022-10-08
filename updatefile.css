@@ -10,18 +10,13 @@
 
 html,
 body {
-    overflow: hidden;
+    /* overflow: hidden; */
     height: 100%;
     min-height: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Readex Pro', sans-serif;
-
-    background-image: url('images/4.jpg');
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-position: bottom 50% right 50%;
 }
 
 /* Start Design of Header */
@@ -53,7 +48,7 @@ nav .logo {
 
     float: right;
     display: flex;
-    gap: 0.5rem;
+    gap: 0.3rem;
     list-style: none;
 
 }
@@ -90,74 +85,7 @@ nav .logo {
     top: 5px;
     left: -45px;
 }
-/* end design of header */
-
-section {
-    display: flex;
-    /* flex-direction: row; */
-    align-items: center;
-    justify-content: center;
-}
-
-button {
-    height: 35px;
-    width: 130px;
-    margin: 0px 50px 50px 50px;
-    background-color: var(--primary);
-    color: #FFFFFF;
-    font-size: 1.2rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    border-radius: 2px;
-    text-align: center;
-    outline: none;
-    border: none;
-
-}
-button:hover {
-    color: var(--font);
-}
-input[type=text] {
-    width: 200px;
-    height: 35px;
-    outline: none;
-    border: 2px solid black;
-    border-radius: 3px;
-    background: transparent;
-    color: var(--font);
-    font-size: 1rem;
-    font-weight: 600;
-    margin: 1px 23px 23px 23px;
-}
-
-.newfile {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
-}
-
-.tagline {
-    text-align: center;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    font-size: 1.5rem;
-    font-weight: 900;
-    color: var(--font);
-}
-#trackingId
-{
-    border: 2px solid black;
-    height:35px ;
-    width: 500px;
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-#addnew {
-    margin: 0px auto;
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-
+/* end header design */
 .progress {
     display: flex;
     flex-direction: column;

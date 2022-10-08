@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FTS:New File & Update</title>
+    <title>FTS:New File</title>
     <link rel="stylesheet" href="newfile.css">
 </head>
 
@@ -36,6 +36,7 @@
     <section>
         <div class="newfile">
             <p class="tagline">ADD NEW FILE</p>
+            <p id="trackingId"></p>
             <input type="text" name="receivedFrom" id="receivedFrom" placeholder="Owner Name" required>
             <input type="text" name="officerName" id="officerName" placeholder="Officer Name" required>
             <input type="text" name="subject" id="subject" placeholder="Reason" required>
@@ -44,28 +45,10 @@
             <input type="text" name="date" id="date" placeholder="Date" required>
             <input type="text" name="totalPages" id="Total_pages" placeholder="Total Pages" required>
             <input type="text" name="mobileNo" id="mobileNo" placeholder="Mobile No" required>
-
+            
             <button type="submit" id="addnew">ADD NEW</button>
         </div>
-        <div class="progress">
-            <p class="tagline">UPDATE FILE PROGRESS</p>
-            <input type="text" name="Tracking Id" id="trackingId" placeholder="Tracking Id" required>
-            <div class="radio" required>
-                <input type="radio" name="status" id="approved">
-                <label for="status">Approved</label>
-
-                <input type="radio" name="status" id="id_progress">
-                <label for="status">In Progress</label>
-
-                <input type="radio" name="status" id="declined">
-                <label for="status">Declined</label>
-            </div>
-            <input type="text" name="date" id="date" placeholder="Date Of Update" required>
-            <input type="text" name="officerName" id="officerName" placeholder="officer Name" required>
-            <input type="text" name="msg" id="msg" placeholder="Extra Info Like Reason" required>
-
-            <button type="submit">UPDATE</button>
-        </div>
+        
     </section>
 </body>
 

@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <script src="https://kit.fontawesome.com/5d37a6898e.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FTS:Home Page</title>
-    <link rel="stylesheet" href="style.css">
+    <title>FTS:Update File</title>
 </head>
-
 <body>
     <header>
         <nav>
@@ -35,20 +31,25 @@
         </nav>
     </header>
     <section>
-        <div class="mainBox">
-            <div class="heading">
-                <p class="headline">trace your file</p>
+        <div class="progress">
+            <p class="tagline">UPDATE FILE PROGRESS</p>
+            <input type="text" name="Tracking Id" id="trackingId" placeholder="Tracking Id" required>
+            <div class="radio" required>
+                <input type="radio" name="status" id="approved">
+                <label for="status">Approved</label>
+
+                <input type="radio" name="status" id="id_progress">
+                <label for="status">In Progress</label>
+
+                <input type="radio" name="status" id="declined">
+                <label for="status">Declined</label>
             </div>
-            <div class="mainContent">
-                <div class="main">
-                    <input type="text" id="tracking_id" placeholder="Enter Tracking id" required>
-                    <div id="btn">
-                        <input type="button" value="track" id="btn1">
-                    </div>
-                </div>
-            </div>
+            <input type="text" name="date" id="date" placeholder="Date Of Update" required>
+            <input type="text" name="officerName" id="officerName" placeholder="officer Name" required>
+            <input type="text" name="msg" id="msg" placeholder="Extra Info Like Reason" required>
+
+            <button type="submit">UPDATE</button>
         </div>
     </section>
 </body>
-
 </html>
