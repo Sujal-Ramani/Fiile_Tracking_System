@@ -31,7 +31,7 @@ header {
     justify-content: space-between;
     align-items: center;
     color: var(--primary);
-    
+
 }
 
 nav .logo {
@@ -60,7 +60,7 @@ nav .logo {
 
 .navigation ul li {
     /* menu add line */
-    display: inline-block; 
+    display: inline-block;
     float: left;
     gap: 2.8rem;
 }
@@ -73,23 +73,25 @@ nav .logo {
     text-decoration: none;
     color: var(--primary);
 }
-.navigation ul li a:hover
-{
+
+.navigation ul li a:hover {
     color: var(--secondary);
 }
 
-.navigation ul ul{
+.navigation ul ul {
     visibility: hidden;
 }
-.navigation ul li:hover > ul 
-{
+
+.navigation ul li:hover>ul {
     visibility: visible;
 }
-.navigation ul ul li{
+
+.navigation ul ul li {
     position: relative;
     top: 5px;
     left: -45px;
 }
+
 /* end design of header */
 
 
@@ -106,8 +108,8 @@ form {
     flex-direction: column;
     align-items: center;
 }
-form .tagline
-{
+
+form .tagline {
     text-align: center;
     font-size: 2.5rem;
     font-weight: 900;
@@ -115,6 +117,7 @@ form .tagline
     margin-bottom: 0px;
     text-transform: uppercase;
 }
+
 form .radio {
     margin: 20px 120px 0px 0px;
 }
@@ -152,4 +155,8 @@ button {
 
 button:hover {
     color: var(--font);
+}
+
+#reg {
+    margin: 30px 0px -20px 0px;
 }
