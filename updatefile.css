@@ -94,6 +94,7 @@ nav .logo {
 
 section {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
@@ -145,3 +146,11 @@ input[type=text] {
 {
     margin: 0px 0px 20px 0px;
 }
+/* #trackingId
+{
+    border: 2px solid black;
+    height:35px ;
+    width: 500px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+} */
