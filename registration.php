@@ -23,6 +23,7 @@ $sql="INSERT INTO `register` (`id`, `firstname`, `lastname`, `gender`, `email`, 
 if($conn->query($sql)==true)
 {
         echo "<h2> <center> Your Account Is Registered </h2> ";
+        header('refresh:3; url=http://localhost/FTS/login.html');
 }
 else
 {

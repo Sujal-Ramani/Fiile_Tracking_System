@@ -118,7 +118,7 @@ button:hover {
     color: var(--font);
 }
 input[type=text] {
-    width: 200px;
+    width: 300px;
     height: 35px;
     outline: none;
     border: 2px solid black;
