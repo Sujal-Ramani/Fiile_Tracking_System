@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap");
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Readex Pro", sans-serif;
+}
+
+header {
+  border-bottom: 2px solid gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #e94a5c;
+}
+header nav .logo {
+  display: inline-block;
+  text-align: center;
+  margin: 0px 0px 0px 20px;
+  font-weight: 800;
+}
+header nav .navigation {
+  margin: 0px 20px 0px 0px;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+header nav .navigation ul {
+  float: right;
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+}
+header nav .navigation ul li {
+  /* menu add line */
+  display: inline-block;
+  gap: 2.8rem;
+}
+header nav .navigation ul li a {
+  display: block;
+  padding: 0px 15px;
+  font-size: 1rem;
+  font-weight: 900;
+  text-decoration: none;
+  color: #e94a5c;
+}
+header nav .navigation ul li a:hover {
+  color: #fdc749;
+}
+header nav .navigation ul li:hover > ul {
+  visibility: visible;
+}
+header nav .navigation ul ul {
+  visibility: hidden;
+}
+header nav .navigation ul ul li {
+  position: relative;
+  top: 5px;
+  left: -45px;
+}
+
+section .aboutsite p {
+  text-align: center;
+  font-size: 2rem;
+}
+
+footer {
+  color: white;
+  height: 250px;
+  width: 100%;
+  background-color: #180839;
+  position: fixed;
+  bottom: 0;
+}
+footer .ft_main p {
+  text-align: center;
+  font-size: 2rem;
+}
+footer .ft_content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: -20px;
+}
+footer .ft_content .department {
+  width: 500px;
+}
+footer .ft_content .department .dep_heading {
+  text-align: center;
+  color: #fdc749;
+  font-size: 1.5rem;
+}
+footer .developer {
+  width: 500px;
+  border-left: 3px solid #fdc749;
+  padding-left: 100px;
+  margin-left: 70px;
+}
+footer .developer .dev_heading {
+  text-align: center;
+  color: #fdc749;
+  font-size: 1.5rem;
+}/*# sourceMappingURL=About_us.css.map */

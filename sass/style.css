@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap");
+html,
+body {
+  overflow: hidden;
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Readex Pro", sans-serif;
+  background-image: url("images/1.jpg");
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: bottom 0% right 90%;
+}
+
+header {
+  border-bottom: 2px solid gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #e94a5c;
+}
+header nav .logo {
+  display: inline-block;
+  text-align: center;
+  margin: 0px 0px 0px 20px;
+  font-weight: 800;
+}
+header nav .navigation {
+  margin: 0px 20px 0px 0px;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+header nav .navigation ul {
+  float: right;
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+}
+header nav .navigation ul li {
+  /* menu add line */
+  display: inline-block;
+  gap: 2.8rem;
+}
+header nav .navigation ul li a {
+  display: block;
+  padding: 0px 15px;
+  font-size: 1rem;
+  font-weight: 900;
+  text-decoration: none;
+  color: #e94a5c;
+}
+header nav .navigation ul li a:hover {
+  color: #fdc749;
+}
+header nav .navigation ul li:hover > ul {
+  visibility: visible;
+}
+header nav .navigation ul ul {
+  visibility: hidden;
+}
+header nav .navigation ul ul li {
+  position: relative;
+  top: 5px;
+  left: -45px;
+}
+
+.mainBox {
+  margin: 240px 120px;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.mainBox .heading .headline {
+  color: #e94a5c;
+  font-size: small;
+  margin: 20px 0px 2px 70px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: "Readex Pro", sans-serif;
+}
+.mainBox .mainContent {
+  margin-bottom: 100px;
+  font-size: 2rem;
+  color: #e94a5c;
+}
+.mainBox .mainContent .main {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+.mainBox .mainContent .main input[type=text] {
+  width: 400px;
+  height: 35px;
+  outline: none;
+  border: 2px solid #000000;
+  border-radius: 3px;
+  background: transparent;
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid grey;
+  margin: 23px;
+}
+.mainBox .mainContent .main input[type=submit] {
+  height: 39px;
+  width: 130px;
+  background-color: #e94a5c;
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 2px;
+  text-align: center;
+  outline: none;
+  border: none;
+  margin: 23px 0px 0px -154px;
+}
+.mainBox .mainContent .main input[type=submit]:hover {
+  color: black;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap");
+html,
+body {
+  overflow: hidden;
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Readex Pro", sans-serif;
+  background-image: url("FTS/images/3.jpg");
+  background-repeat: no-repeat;
+  background-size: 55%;
+  background-position: bottom 50% right 80%;
+}
+
+header {
+  border-bottom: 2px solid gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #e94a5c;
+}
+header nav .logo {
+  display: inline-block;
+  text-align: center;
+  margin: 0px 0px 0px 20px;
+  font-weight: 800;
+}
+header nav .navigation {
+  margin: 0px 20px 0px 0px;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+header nav .navigation ul {
+  float: right;
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+}
+header nav .navigation ul li {
+  /* menu add line */
+  display: inline-block;
+  gap: 2.8rem;
+}
+header nav .navigation ul li a {
+  display: block;
+  padding: 0px 15px;
+  font-size: 1rem;
+  font-weight: 900;
+  text-decoration: none;
+  color: #e94a5c;
+}
+header nav .navigation ul li a:hover {
+  color: #fdc749;
+}
+header nav .navigation ul li:hover > ul {
+  visibility: visible;
+}
+header nav .navigation ul ul {
+  visibility: hidden;
+}
+header nav .navigation ul ul li {
+  position: relative;
+  top: 5px;
+  left: -45px;
+}
+
+section {
+  width: 300px;
+  float: right;
+  margin: 100px 120px;
+  padding: 10px;
+}
+section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -10px;
+}
+section form .tagline {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #fdc749;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+}
+section form #reg {
+  margin: 50px 0px -20px 0px;
+}
+section input[type=text], section input[type=password] {
+  width: 250px;
+  height: 38px;
+  outline: none;
+  border: 2px solid #000000;
+  border-radius: 3px;
+  background: transparent;
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 20px 20px 0px 20px;
+  border: 1px solid gray;
+}
+section input[type=button] {
+  height: 35px;
+  width: 130px;
+  background-color: #e94a5c;
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 2px;
+  text-align: center;
+  outline: none;
+  border: none;
+  margin-top: 50px;
+}
+section input[type=button]:hover {
+  color: black;
+}/*# sourceMappingURL=Login.css.map */
