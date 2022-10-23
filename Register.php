@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,7 +21,7 @@
             </div>
             <div class="navigation">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.php">Home</a></li>
                     <li><a href="New_File.php">New File</a></li>
                     <li><a href="Update_File.html">Update File</a></li>
                     <li><a href="Track_File.html">Track File</a></li>
@@ -27,7 +30,7 @@
                             <i class="fa fa-sharp fa-solid fa-caret-down"></i>
                         </a>
                         <ul>
-                            <li><a href="index.html">Sign Out</a></li>
+                            <li><a href="Logout.php">Sign Out</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -35,7 +38,7 @@
         </nav>
     </header>
     <section>
-        <form method="post">
+        <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="post">
             <p class="tagline">Register</p>
             <input type="text" name="fName" id="id_firstName" placeholder="First Name" >
             <input type="text" name="lName" id="id_lastName" placeholder="Last  Name" >
@@ -48,7 +51,7 @@
             <input type="email" name="email" id="id_email" placeholder="someone@example.com" >
             <input type="password" name="password" id="id_password" placeholder="Create Password" >
             <input type="password" name="cpassword" id="id_cpassword" placeholder="Create Password" >
-            <a href="Login.html" id="reg">Already Have An Account</a>
+            <a href="Login.php" id="reg">Already Have An Account</a>
             <input type="submit" value="Submit" name="submit">
         </form>
         <?php
@@ -63,8 +66,8 @@
                 $password =  mysqli_real_escape_string($conn,$_POST['password']);
                 $cpassword =  mysqli_real_escape_string($conn,$_POST['cpassword']);
 
-                $pass = password_hash($password, PASSWORD_BCRYPT);
-                $cpass = password_hash($cpassword, PASSWORD_BCRYPT);
+                // $pass = password_hash($password, PASSWORD_BCRYPT);
+                // $cpass = password_hash($cpassword, PASSWORD_BCRYPT);
 
                 $email_sql = "select * from `register` where Email = '$email'";
                 $sql = mysqli_query($conn,$email_sql);
@@ -81,7 +84,7 @@
                 {
                     if($password === $cpassword)
                     {
-                        $Reg_insert = "insert into `register` (`First_Name`, `Last_Name`, `Gender`, `Email`, `Password`,`cPassword`) values ('$fName','$lName','$gender','$email','$pass','$cpass')";
+                        $Reg_insert = "insert into `register` (`First_Name`, `Last_Name`, `Gender`, `Email`, `Password`,`cPassword`) values ('$fName','$lName','$gender','$email','$password','$cpassword')";
                         $res_Reg = mysqli_query($conn, $Reg_insert);
                         if($res_Reg)
                         {
@@ -113,10 +116,10 @@
             // else
             // {
             //     ?>
-            //         <!-- <script>
+                        <!-- <script>
             //             alert("Problem in Submit Condition");
             //         </script> -->
-            //      <?php 
+                   <?php 
             // }
         ?>
     </section>

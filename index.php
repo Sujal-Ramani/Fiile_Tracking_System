@@ -1,6 +1,12 @@
+<?php
+session_start();
+if(!isset($_SESSION['username']))
+{
+    header('location:login.php');
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <script src="https://kit.fontawesome.com/5d37a6898e.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
@@ -17,16 +23,16 @@
             </div>
             <div class="navigation">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.php">Home</a></li>
                     <li><a href="New_File.php">New File</a></li>
                     <li><a href="Update_File.html">Update File</a></li>
                     <li><a href="Track_File.html">Track File</a></li>
                     <li><a href="About_us.html">About us</a></li>
-                    <li><a href="Login.html" class="nav-drop">Log in
+                    <li><a href="Login.php" class="nav-drop">Log in
                             <i class="fa fa-sharp fa-solid fa-caret-down"></i>
                         </a>
                         <ul>
-                            <li><a href="index.html">Sign Out</a></li>
+                            <li><a href="Logout.php">Sign Out</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -36,7 +42,7 @@
     <section>
         <div class="mainBox">
             <div class="heading">
-                <p class="headline">trace your file</p>
+                <p class="headline">trace your file <br /><?php echo $_SESSION['username']; ?></p>
             </div>
             <div class="mainContent">
                 <div class="main">

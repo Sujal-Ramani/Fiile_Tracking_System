@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,16 +19,16 @@
             </div>
             <div class="navigation">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.php">Home</a></li>
                     <li><a href="New_File.php">New File</a></li>
                     <li><a href="Update_File.html">Update File</a></li>
                     <li><a href="Track_File.html">Track File</a></li>
                     <li><a href="About_us.html">About us</a></li>
-                    <li><a href="Login.html" class="nav-drop">Log in
+                    <li><a href="Login.php" class="nav-drop">Log in
                             <i class="fa fa-sharp fa-solid fa-caret-down"></i>
                         </a>
                         <ul>
-                            <li><a href="index.html">Sign Out</a></li>
+                            <li><a href="Logout.php">Sign Out</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -34,7 +37,7 @@
     </header>
     <section>
         <div class="newfile">
-            <form method="POST">
+            <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="POST">
                 <p class="tagline">ADD NEW FILE</p>
                 <input type="text"  name="rFrom" id="receivedFrom" placeholder="Owner Name" >
                 <input type="text"  name="oName" id="officerName" placeholder="Officer Name" >
