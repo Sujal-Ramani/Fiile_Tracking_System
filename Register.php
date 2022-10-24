@@ -23,10 +23,10 @@
                 <ul>
                     <li><a href="index.php">Home</a></li>
                     <li><a href="New_File.php">New File</a></li>
-                    <li><a href="Update_File.html">Update File</a></li>
-                    <li><a href="Track_File.html">Track File</a></li>
-                    <li><a href="About_us.html">About us</a></li>
-                    <li><a href="Login.html" class="nav-drop">Log in
+                    <li><a href="Update_File.php">Update File</a></li>
+                    <li><a href="Track_File.php">Track File</a></li>
+                    <li><a href="About_us.php">About us</a></li>
+                    <li><a href="Login.php" class="nav-drop">Log in
                             <i class="fa fa-sharp fa-solid fa-caret-down"></i>
                         </a>
                         <ul>
@@ -43,9 +43,9 @@
             <input type="text" name="fName" id="id_firstName" placeholder="First Name" >
             <input type="text" name="lName" id="id_lastName" placeholder="Last  Name" >
             <div class="radio">
-                <input type="radio" name="gender" id="id_maile">
+                <input type="radio" value="Male" name="gender" id="id_male">
                 <label for="male">Male</label>
-                <input type="radio" name="gender" id="id_female">
+                <input type="radio" value="Female" name="gender" id="id_female">
                 <label for="female">Female</label>
             </div>
             <input type="email" name="email" id="id_email" placeholder="someone@example.com" >
@@ -91,7 +91,7 @@
                             ?>
                                 <script>
                                     alert("Account Register Successfully");
-                                </script>
+                                    location.replace("Login.php");
                             <?php
                         }else
                         {

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <script src="https://kit.fontawesome.com/5d37a6898e.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
@@ -41,46 +40,49 @@
             </div>
             <div class="mainContent">
                 <div class="main">
-                    <input type="text" id="tId" placeholder="Enter Tracking id">
-                    <div id="btn">
+                    <form method="POST">
+                        <input type="text" name="tId" id="tId" placeholder="Enter Tracking id">
                         <input type="submit" name ="tFilebtn" value="track" id="btn1">
-                    </div>
+                    </form>
+                    <p>
+                    <?php
+                        include 'connection.php'; 
+                        if(isset($_POST['tFilebtn']))
+                        {
+                            $tracking_id = $_POST['tId'];
+                            $search_file = "select * from `files` where Tracking_id = '$tracking_id'";
+                            $search = mysqli_query($conn,$search_file);
+                            $res = mysqli_fetch_array($search);
+                        }
+                    ?>
+                    </p>
                 </div>
             </div>
         </div>
         <div class="details">
             <div class="info">
                 <p class="tagline">File Details</p>
-                <p>Owner Name : </p>
-                <span id="receivedFrom"></span>
-                <p>Officer Name : </p>
-                <span id="officerName"></span>
-                <p>File Color : </p>
-                <span id="color"></span>
-                <p>Mobile No : </p>
-                <span class="mobileNo"></span>
+                <p><b>Owner Name :</b> <?php echo $res['Owner_Name']; ?></p>
+                <p><b>Officer Name :</b> <?php echo $res['Officer_Name']; ?></p>
+                <p><b>File Color :</b> <?php echo $res['Colour']; ?></p>
+                <p><b>Mobile No :</b> <?php echo $res['Mo.no']; ?></p>
             </div>
             <div class="status">
                 <p class="tagline">File Status</p>
-                <p>Status : </p>
-                <span id="sta_tus"></span>
-                <p>Date of Update : </p>
-                <span id="date"></span>
-                <p>Last Update by : </p>
-                <span id="officerName"></span>
+                <p><b>Status :</b> <?php echo $res['Status']; ?></p>
+                <p><b>Date of Update :</b> <?php echo $res['Date Of Update']; ?></p>
+                <p><b>Last Update by :</b> <?php echo $res['Officer_Name']; ?></p>
             </div>
         </div>
         <div class="result">
             <img src="sass/images/2.jpg" alt="">
             <div class="keypoint">
                 <p class="tagline">Work Reason</p>
-                <span id="reason"></span>
+                <span id="reason"><?php echo $res['Reason']; ?></span>
             </div>
             <div class="path">
-
             </div>
         </div>
     </section>
 </body>
-
 </html>

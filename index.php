@@ -25,9 +25,9 @@ if(!isset($_SESSION['username']))
                 <ul>
                     <li><a href="index.php">Home</a></li>
                     <li><a href="New_File.php">New File</a></li>
-                    <li><a href="Update_File.html">Update File</a></li>
-                    <li><a href="Track_File.html">Track File</a></li>
-                    <li><a href="About_us.html">About us</a></li>
+                    <li><a href="Update_File.php">Update File</a></li>
+                    <li><a href="Track_File.php">Track File</a></li>
+                    <li><a href="About_us.php">About us</a></li>
                     <li><a href="Login.php" class="nav-drop">Log in
                             <i class="fa fa-sharp fa-solid fa-caret-down"></i>
                         </a>
