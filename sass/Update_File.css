@@ -76,23 +76,23 @@ section {
   justify-content: center;
 }
 section .progress {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin: 70px 0px 0px 50px;
 }
 section .progress .tagline {
   text-align: center;
-  grid-column-start: 1;
-  grid-column-end: 3;
   font-size: 1.5rem;
   font-weight: 900;
   color: var(--font);
 }
-section .progress .radio {
+section .progress form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section .progress form .radio {
   margin: 0px 0px 20px 0px;
 }
-section .progress input[type=text] {
+section .progress form input[type=text] {
   width: 300px;
   height: 35px;
   outline: none;
@@ -104,7 +104,7 @@ section .progress input[type=text] {
   font-weight: 600;
   margin: 1px 23px 23px 23px;
 }
-section .progress input[type=submit] {
+section .progress form input[type=submit] {
   height: 35px;
   width: 130px;
   background-color: #e94a5c;
@@ -117,6 +117,6 @@ section .progress input[type=submit] {
   outline: none;
   border: none;
 }
-section .progress input[type=submit]:hover {
+section .progress form input[type=submit]:hover {
   color: black;
 }/*# sourceMappingURL=Update_File.css.map */

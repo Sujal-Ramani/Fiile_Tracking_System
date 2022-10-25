@@ -36,29 +36,54 @@
     <section>
         <div class="progress">
             <p class="tagline">UPDATE FILE PROGRESS</p>
-            <input type="text" name="tId" id="trackingId" placeholder="Tracking Id" required>
-            <div class="radio" required>
-                <input type="radio" name="status" id="approved">
-                <label for="status">Approved</label>
-
-                <input type="radio" name="status" id="id_progress">
-                <label for="status">In Progress</label>
-
-                <input type="radio" name="status" id="declined">
-                <label for="status">Declined</label>
-            </div>
-            <input type="text" name="date" id="date" placeholder="Date Of Update" required>
-            <input type="text" name="oName" id="officerName" placeholder="officer Name" required>
-            <input type="text" name="msg" id="msg" placeholder="Extra Info Like Reason" required>
-
-            <input type="submit" name="ufProgress" value="UPDATE">
-            <?php
-            include 'connection.php';
+            <form method="POST">
+                <input type="text" name="tId" id="trackingId" placeholder="Tracking Id" required>
+                <div class="radio" required>
+                    <input type="radio" value="Approved" name="status" id="approved">
+                    <label for="status">Approved</label>
+                    
+                    <input type="radio" value="In Progress" name="status" id="id_progress">
+                    <label for="status">In Progress</label>
+                    
+                    <input type="radio" value="Declined" name="status" id="declined">
+                    <label for="status">Declined</label>
+                </div>
+                <input type="text" name="date" value="" id="date" placeholder="Date Of Update" required>
+                <input type="text" name="oName" value="" id="officerName" placeholder="officer Name" required>
+                <input type="text" name="msg" value="" id="msg" placeholder="Extra Info Like Reason" required>  
+                
+                <input type="submit" name="ufProgress" value="UPDATE">
+            </form>
+                <?php
+                include 'connection.php';
                 if(isset($_POST['ufProgress']))
                 {
                     $tracking_id = $_POST['tId'];
-                    $search_file = "select * from `files` where Tracking_id = '$tracking_id'";
-                    $result = mysqli_query($conn,$search_file);
+                    $status = $_POST['status'];
+                    $date = $_POST['date'];
+                    $oName = $_POST['oName'];
+                    $reason = $_POST['msg'];
+
+                    $update = "update `files` set `Officer_Name` = '$oName',`Reason` = '$reason',`Date Of Update` = '$date', `Status` = '$status' where `Tracking_id` = '$tracking_id'";
+
+                    $run_update = mysqli_query($conn, $update);
+                    if($run_update)
+                    {
+                        ?>
+                            <script>
+                                alert("Recored  Updated Successful");
+                            </script>
+                        <?php
+                    }else
+                    {
+                        ?>
+                        <script>
+                            alert("Recored Not  Update Successful");
+                        </script>
+                        <?php            
+
+                    }
+
                 }
             ?>
         </div>
